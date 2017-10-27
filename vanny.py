@@ -38,8 +38,8 @@ helpMessage =""" Vanny♡ Bot
 
 [*] Command in the groups [*]
 
-[Curl]
-[Ourl]
+[Curl] Close URL
+[Ourl] Open URL
 [url]
 [url:「Group ID」]
 [Invite：「mid」]
@@ -50,15 +50,15 @@ helpMessage =""" Vanny♡ Bot
 [Gn 「group name」]
 [Nk 「name」]
 
-[*] Command kicker only [*]
+[*] Command Khusus Kicker ┌∩┐(◣_◢)┌∩┐[*]
 
 [Bye]
 [Kill ban]
 [Kill 「@」]
-[Ban 「@」] By Tag
-[Unban 「@」] By Tag
-[Ban︎] Share Contact
-[Unban︎] Share Contact
+[Ban 「@」] Dengan Tag
+[Unban 「@」] Dengan Tag
+[Ban︎] Kirim Kontaknya
+[Unban︎] Kirim Kontaknya
 [Banlist︎]
 [Cek ban]
 [Cv mid]
@@ -84,15 +84,15 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Thanks for add me",
+    'message':"Terima Kasih Telah Menambahkan Saya Sebagai Teman ( ˘ ³˘)♥",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"Terima Kasih Telah Menambahkan Saya Sebagai Teman ( ˘ ³˘)♥",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"Chivas ",
+    "cName":"Vanny ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
