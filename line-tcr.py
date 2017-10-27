@@ -15,7 +15,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
+helpMessage =""" Vanny♡ Bot
 [Id︎]
 [Mid]
 [Me︎]
@@ -1610,9 +1610,9 @@ def bot(op):
                                 kc.sendText(msg.to,"Succes Cv")
 #-----------------------------------------------
             elif msg.text in ["Test"]:
-                ki.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kk.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kc.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
+                ki.sendText(msg.to,"Ok Vanny 􀨁􀄻double thumbs up􏿿")
+                kk.sendText(msg.to,"Ok Vanny 􀨁􀄻double thumbs up􏿿")
+                kc.sendText(msg.to,"Ok Vanny 􀨁􀄻double thumbs up􏿿")
 #-----------------------------------------------
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
@@ -1621,10 +1621,10 @@ def bot(op):
 				kc.sendText(msg.to,(bctxt))
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hi"]:
-                ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Hallo"]:
+                ki.sendText(msg.to,"Hai Juga 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Hai Juga 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Hai Juga 􀜁􀅔Har Har􏿿")
 
 #-----------------------------------------------
 
@@ -1636,16 +1636,16 @@ def bot(op):
                 ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Vanng say bobo ah","Bobo dulu ah"]:
+                ki.sendText(msg.to,"Have a nice dream Vanny 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Have a nice dream Vanny 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Have a nice dream Vanny 􀜁􀅔Har Har􏿿")
             elif msg.text in ["Cv say chomel pekok"]:
                 ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
             elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
+                ki.sendText(msg.to,"Selamat datang di MamangSquad Family Room")
                 kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
