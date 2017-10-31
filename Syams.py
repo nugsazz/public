@@ -1548,18 +1548,6 @@ def bot(op):
             else:
                 pass
                         
-#-------------------Mid via Tag------------------
-            elif msg.text in ["Mid @"]:
-              if msg.from_ in owner:
-                _name = msg.text.replace("Mid @","")
-                _nametarget = _name.rstrip(' ')
-                gs = cl.getGroup(msg.to)
-                for g in gs.members:
-                    if _nametarget == g.displayName:
-                        random.choice(KAC).sendText(msg.to, g.mid)
-                    else:
-                        pass
-
 #------------------------[Kick]----------------------------
 	
             elif msg.text in ["syams"]:
