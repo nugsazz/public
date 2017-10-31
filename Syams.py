@@ -1527,7 +1527,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Block On")
 #-----------------------------------------------
-            elif ".Youtube " in msg.text:
+            elif msg.text in [".Youtube"]:
                  query = msg.text.replace(".Youtube ","")
                  with requests.session() as s:
                      s.headers['user-agent'] = 'Mozilla/5.0'
@@ -1549,7 +1549,7 @@ def bot(op):
                 pass
                         
 #-------------------Mid via Tag------------------
-            elif "Mid @" in msg.text:
+            elif msg.text in ["Mid @"]:
               if msg.from_ in owner:
                 _name = msg.text.replace("Mid @","")
                 _nametarget = _name.rstrip(' ')
