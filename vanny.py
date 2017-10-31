@@ -72,8 +72,6 @@ helpMessage =""" Vanny♡ Bot
 [Title:]
 
 [*] Admin [*]
-[Staff add @]
-[Remove staff @]
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -1427,9 +1425,20 @@ def bot(op):
                          print rom
                          chiya += rom[1] + "\n"
 
-		   cl.sendText(msg.to, "||===== Di Read Oleh =====||%s\n||=======Vanny=======||\n\n||Pelaku CCTV /👇👇👇||\n%sOrang Ini Gak Normal\n\nBuang Aja Ke Laut :v\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+		   cl.sendText(msg.to, "||===== Di Read Oleh =====||%s \n||=======Vanny=======||\n\n||Pelaku CCTV /👇👇👇||\n%sOrang Ini Gak Normal\n\nBuang Aja Ke Laut :v\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
        	        else:
 		   cl.sendText(msg.to, "vny Blom Di Ketik Yaelah\n\nDASAR PIKUN :v ♪")
+#----------------Mid via Tag--------------
+            elif "Mid @" in msg.text:
+              if msg.from_ in owner:
+                _name = msg.text.replace("Mid @","")
+                _nametarget = _name.rstrip(' ')
+                gs = cl.getGroup(msg.to)
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        random.choice(KAC).sendText(msg.to, g.mid)
+                    else:
+                        pass
 #-----------------------------------------------
             elif msg.text in ["Bye all"]:
                 if msg.toType == 2:
@@ -1649,10 +1658,10 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["vny say Kamu Jelek"]:
+                ki.sendText(msg.to,"Lu Jelek Juga 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Lu Jelek Juga 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Lu Jelek Juga 􀜁􀅔Har Har􏿿")
             elif msg.text in ["Cv say didik pekok"]:
                 ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
