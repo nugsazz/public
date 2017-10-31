@@ -1471,6 +1471,73 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
+elif "Add staff @" in msg.text:
+                if msg.from_ in Bots:
+                    print "[Command]Staff add executing"
+                    _name = msg.text.replace("Add staff @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    #gs = kk.getGroup(msg.to)
+                    #gs = kc.getGroup(msg.to)
+                    #gs = kg.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                staff.append(target)
+                                cl.sendText(msg.to,"Added to the staff list")
+                            except:
+                                pass
+                    print "[Command]Staff add executed"
+                else:
+                    cl.sendText(msg.to,"Command denied.")
+                    cl.sendText(msg.to,"Admin permission required.")
+                    
+            elif "Remove staff @" in msg.text:
+                if msg.from_ in Bots:
+                    print "[Command]Staff remove executing"
+                    _name = msg.text.replace("Remove staff @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    #gs = kk.getGroup(msg.to)
+                    #gs = kc.getGroup(msg.to)
+                    #gs = kg.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                staff.remove(target)
+                                cl.sendText(msg.to,"Removed to the staff list")
+                            except:
+                                pass
+                    print "[Command]Staff remove executed"
+                else:
+                    cl.sendText(msg.to,"Command denied.")
+                    cl.sendText(msg.to,"Admin permission required.")
+
+            elif msg.text in ["Stafflist","stafflist"]:
+                if staff == []:
+                    ki.sendText(msg.to,"The stafflist is empty")
+                else:
+                    ki.sendText(msg.to,"Staff list:")
+                    mc = ""
+                    for mi_d in staff:
+                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
+                    ki.sendText(msg.to,mc)
+                    print "[Command]Stafflist executed"
+#-----------------------------------------------
             elif msg.text in ["Kill"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
