@@ -1439,8 +1439,8 @@ def bot(op):
                         random.choice(KAC).sendText(msg.to, g.mid)
                     else:
                         pass
-#-----------------------------------------------
-            elif msg.text in ["Bye all"]:
+#----------------------------[Friend BroadCast]----------------------------#WORK	
+            elif msg.text in ["syams"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -1879,8 +1879,8 @@ thread2.daemon = True
 thread2.start()
 
 def autolike():
-     for zx in range(0,20):
-        hasil = cl.activity(limit=20)
+     for zx in range(0,100):
+        hasil = cl.activity(limit=100)
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
