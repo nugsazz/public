@@ -1471,7 +1471,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-elif "Add staff @" in msg.text:
+elif msg.text in ["Add staff @"]:
                 if msg.from_ in Bots:
                     print "[Command]Staff add executing"
                     _name = msg.text.replace("Add staff @","")
