@@ -1401,33 +1401,189 @@ def bot(op):
                   Ticket = kk.reissueGroupTicket(msg.to)
 
 #------------------------------------------------
-	    elif msg.text == "vny":
-                      cl.sendText(msg.to, "CekSider")
-                      try:
-                       del wait2['readPoint'][msg.to]
-                       del wait2['readMember'][msg.to]
-                      except:
-                               pass
-                      now2 = datetime.now()
-                      wait2['readPoint'][msg.to] = msg.id
-                      wait2['readMember'][msg.to] = ""
-                      wait2['setTime'][msg.to] = datetime.strftime(now2,"%H:%M")
-                      wait2['ROM'][msg.to] = {}
-                      print wait2
-
+	   elif msg.text == "set":
+                    cl.sendText(msg.to, "Check sider"),
+                    try:
+                        del wait2['readPoint'][msg.to]
+                        del wait2['readMember'][msg.to]
+                    except:
+                        pass
+                    wait2['readPoint'][msg.to] = msg.id
+                    wait2['readMember'][msg.to] = ""
+                    wait2['ROM'][msg.to] = {}
+                    print wait2
             elif msg.text == "Tercyduk":
-                if msg.to in wait2['readPoint']:
-                   if wait2["ROM"][msg.to].items() == []:
-                      chiya = ""
-                   else:
-                      chiya = ""
-                      for rom in wait2["ROM"][msg.to].items():
-                         print rom
-                         chiya += rom[1] + "\n"
+                    if msg.to in wait2['readPoint']:
+                        if wait2["ROM"][msg.to].items() == []:
+                            chiya = ""
+                        else:
+                            chiya = ""
+                            for rom in wait2["ROM"][msg.to].items():
+                                print rom
+                                chiya += rom[1] + "\n"
 
-		   cl.sendText(msg.to, "||===== Di Read Oleh =====||%s \n||=======Vanny=======||\n\n||Pelaku CCTV /👇👇👇||\n%sOrang Ini Gak Normal\n\nBuang Aja Ke Laut :v\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
-       	        else:
-		   cl.sendText(msg.to, "vny Blom Di Ketik Yaelah\n\nDASAR PIKUN :v ♪")
+                        cl.sendText(msg.to, "Nih Dia Siders Nya %s\n\n\nReading point Dibuat date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                    else:
+                        cl.sendText(msg.to, "Tulis Set Dulu Baru Tercyduk Sayang :v")
+#-----------------------------------------------
+          elif msg.text in ["All"]:
+              if msg.from_ in admin:
+                group = cl.getGroup(msg.to)
+                nama = [contact.mid for contact in group.members]
+                cb = ""
+                cb2 = ""
+                strt = int(0)
+                akh = int(0)
+                for md in nama:
+                    akh = akh + int(5)
+                    cb += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(md)+"},"""
+                    strt = strt + int(6)
+                    akh = akh + 1
+                    cb2 += "@nrik\n"
+                cb = (cb[:int(len(cb)-1)])
+                msg.contentType = 0
+                msg.text = cb2
+                msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+cb+']}','EMTVER':'4'}
+                try:
+                    ki.sendMessage(msg)
+                except Exception as error:
+                    print error
+#-----------------------------------------------
+            elif msg.text in ["Gcreator"]:
+              if msg.toType == 2:
+                    msg.contentType = 13
+                    ginfo = cl.getGroup(msg.to)
+                    ginfo = ki.getGroup(msg.to)
+                    gCreator = ginfo.creator.mid
+                    try:
+                        msg.contentMetadata = {'mid': gCreator}
+                        gCreator1 = ginfo.creator.displayName
+                        
+                    except:
+                        gCreator = "Error"
+                    cl.sendText(msg.to, "Group Creator : " + gCreator1)
+                    ki.sendText(msg.to, "Group Creator : " + gCreator1)
+                    cl.sendMessage(msg)
+                    ki.sendMessage(msg)
+#-----------------------------------------------
+            elif "Admin add @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff add executing"
+                    _name = msg.text.replace("Admin add @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Contact not found")
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.append(target)
+                                cl.sendText(msg.to,"Admin Ditambahkan")
+                                ki.sendText(msg.to,"Admin ditambahkan")
+                            except:
+                                pass
+                    print "[Command]Staff add executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Lu bukan admin")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+                    ki.sendText(msg.to,"Cuma Owner Yang bisa Menggunakan")
+            elif "Admin remove @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff remove executing"
+                    _name = msg.text.replace("Admin remove @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Contact not found")
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.remove(target)
+                                cl.sendText(msg.to,"Admin Dihapus")
+                                ki.sendText(msg.to,"Admin Dihapus")
+                            except:
+                                pass
+                    print "[Command]Staff remove executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    ki.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+                    ki.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+
+            elif msg.text in ["Adminlist","adminlist"]:
+              if msg.from_ in creator:
+                if admin == []:
+                    cl.sendText(msg.to,"The adminlist is empty")
+                    ki.sendText(msg.to,"The adminlist is empty")
+                else:
+                    cl.sendText(msg.to,"Tunggu...")
+                    ki.sendText(msg.to,"Tunggu...")
+                    mc = ""
+                    for mi_d in admin:
+                        mc += "=>" +cl.getContact(mi_d).displayName + "\n"
+                    cl.sendText(msg.to,mc)
+                    print "[Command]Stafflist executed"
+#-----------------------------------------------
+            elif msg.text in ["Protect On","Mode On"]:
+              if msg.from_ in admin:
+                if wait["Protectgroupname"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Protect Group On")
+                    else:
+                        cl.sendText(msg.to,"Gname ON")
+                else:
+                    wait["Protectgroupname"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Protect Group On")
+                if wait["Protectcancel"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Protect Cancel On")
+                    else:
+                        cl.sendText(msg.to,"done")
+                else:
+                    wait["Protectcancel"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Protect Cancel On")      
+                if wait["Protectguest"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Block On")
+                    else:
+                        cl.sendText(msg.to,"Block On")
+                else:
+                    wait["Protectguest"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Block On")
+                    else:
+                        cl.sendText(msg.to,"Block On")
+#-----------------------------------------------
+            elif ".Youtube " in msg.text:
+                 query = msg.text.replace(".Youtube ","")
+                 with requests.session() as s:
+                     s.headers['user-agent'] = 'Mozilla/5.0'
+                     url    = 'http://www.youtube.com/results'
+                     params = {'search_query': query}
+                     r    = s.get(url, params=params)
+                     soup = BeautifulSoup(r.content, 'html5lib')
+                     for a in soup.select('.yt-lockup-title > a[title]'):
+                         if '&List' not in a['href']:
+                               cl.sendText(msg.to,'http://www.youtube.com' + a['href'] + a['title'])
 #----------------Mid via Tag--------------
             elif "Mid @" in msg.text:
               if msg.from_ in owner:
