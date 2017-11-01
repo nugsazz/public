@@ -1549,6 +1549,7 @@ def bot(op):
                 pass
                         
 #------------------------[Kick]----------------------------
+
             elif msg.text in ["Kill"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
