@@ -29,65 +29,71 @@ sys.setdefaultencoding('utf-8')
 #album = None
 #image_path = 'tmp/tmp.jpg'
 
-helpMessage ="""!CommandMember!
-=> Creator
-=> Van say
-=> GCreator
-=> .music
-=> .Youtube
+helpMessage ="""»» !CommandMember! ««
 
-!Command Creator!
-=> Admin add @
-=> Admin remove @
-=> Adminlist
-=> InviteMeTo:
+»» [Creator] = Pembuat Bot
+»» [Van say] = Contoh Van Say Hai
+»» [Gcreator] = Menunjukan Pembuat Group
+»» [.music] = Masih Belum Tau Kegunaanya
+»» [.Youtube] «« = Masih Belum Tau Kegunaanya
+--------------------------------
+ »» !Command Creator! ««
+ 
+»» Admin add @ = Add Permission Admin ««
+»» Admin remove @ = Remove Admin ««
+»» Adminlist = Admin List ««
+»» InviteMeTo: = Agak Eror ««
+--------------------------------
+»» !Command Admin = Khusus Admin! ««
 
-!Command Admin!
-=> Id
-=> Mid
-=> Mid @
-=> Me
-=> Urloff
-=> Urlon
-=> Ginfo
-=> Cancel
-=> Gn
-=> Cname
-=> Cstatus
-=> Gcreator:inv
-=> Out
-=> Invite
-=> Cn
-=> Gift
-=> Respon
-=> Tagall
-=> Glist
-=> Spam:
-=> Check > Absen
-=> Steal + Mid
-=> Steal @
+»» Id ««
+»» Mid ««
+»» Mid @ ««
+»» Me ««
+»» Urloff ««
+»» Urlon ««
+»» Ginfo = Group Info ««
+»» Cancel = Cancel Semua Invite Di Group ««
+»» Gn = Ganti nama Group ««
+»» Cname = Change Name ««
+»» Cstatus = Change Status ««
+»» Gcreator:inv ««
+»» Out = Kick All Member ««
+»» Invite ««
+»» Cn ««
+»» Gift = Mengirim Hadiah ««
+»» Respon = Respon Bot ««
+»» Tagall = Tag Semua Anggota Group ««
+»» Glist = Group List Bot ««
+»» Spam: ««
+»» Check > Absen = Eror ««
+»» Steal + Mid ««
+»» Steal @ ««
+------------------------
+»» !Command Mimic! ««
 
-!Command Mimic!
-=> Mimic @
-=> Mimic:add: @
-=> Mimic:del: @
-=> ListTarget
+»» Mimic @ ««
+»» Mimic:add: @ ««
+»» Mimic:del: @ ««
+»» ListTarget ««
+------------------------
+»» !CommandPenting! ««
 
-!CommandPenting!
-=> Guest On/Off
-=> Mad On/Off
-=> Qr On/Off
-=> Ban @ 
-=> Unban @
-=> Kill Ban
-=> Kill @
-=> Nk
-=> Vk
-=> Cleanse
+»» Guest On/Off ««
+»» Mad On/Off ««
+»» Qr On/Off ««
+»» Ban @ ««
+»» Unban @ ««
+»» Kill Ban ««
+»» Kill @ ««
+»» Nk ««
+»» Vk ««
+»» Cleanse
 
-==================================================
-BOT : Vanny
-SUPPORT BY : Merkremont, Alfathdirk
+===========================================================
+|     BOT Creator : Vanny | http://line.me/ti/p/~syams011 |
+|    SUPPORT BY : Merkremont, Alfathdirk                  |
+===========================================================
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -2349,7 +2355,7 @@ def bot(op):
                       else:
                           pass
 #-----------------------------------------------
-            elif msg.text in ["Sp","Speed","speed"]:
+            elif msg.text in ["Sp","Speed",".sp"]:
 				if msg.from_ in admin:
 					start = time.time()
 					cl.sendText(msg.to, "Wait...")
@@ -2461,6 +2467,26 @@ def a2():
         return False
     else:
         return True
+
+def autolike():
+     for zx in range(0,100):
+        hasil = cl.activity(limit=100)
+        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
+          try:    
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
+            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Syams - 255\n\nSubscribe Channel Saya Youtube.com/c/SYAMSPlayMC")
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Vanny\n\nSubscribe Channel Saya youtube.com/c/SYAMSPlayMC")
+            print "DiSukai Atau Like"
+          except:
+            pass
+        else:
+            print "Sudah Di Like"
+     time.sleep(500)
+thread2 = threading.Thread(target=autolike)
+thread2.daemon = True
+thread2.start()
 
 def nameUpdate():
     while True:
