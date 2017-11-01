@@ -8,7 +8,7 @@ from datetime import datetime
 # from imgurpython import ImgurClient
 import time,random,sys,json,codecs,threading,glob,re
 
-cl = VANNY.LINE()
+cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult
 
