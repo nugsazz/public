@@ -1550,7 +1550,7 @@ def bot(op):
                         
 #------------------------[Kick]----------------------------
 	
-            elif msg.text in ["syams"]:
+            elif msg.text in ["Bye all"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
