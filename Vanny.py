@@ -1549,53 +1549,6 @@ def bot(op):
                 pass
                         
 #------------------------[Kick]----------------------------
-	
-            elif msg.text in ["Bye all"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["Bye 1"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["Bye 2"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["vny1 @bye"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["vny2 @bye"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        kk.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["vny3 @bye"]:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        kc.leaveGroup(msg.to)
-                    except:
-                        pass
-#-----------------------------------------------
             elif msg.text in ["Kill"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
