@@ -1958,14 +1958,8 @@ def bot(op):
 
             elif msg.text in ["Creator1"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "ua4872a5a9a3b3be7cb07668b486c0e19"}
+					msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
 					cl.sendMessage(msg)
-					
-	elif msg.text in ["Creator2"]:
-		                      msg.contentType = 13
-		                      msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
-		                      cl.sendMessage(msg)
-					
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam: " in msg.text:
               if msg.from_ in admin:
