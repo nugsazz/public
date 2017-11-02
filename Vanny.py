@@ -1965,6 +1965,7 @@ def bot(op):
 		                      msg.contentType = 13
 		                      msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
 		                      cl.sendMessage(msg)
+					
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam: " in msg.text:
               if msg.from_ in admin:
