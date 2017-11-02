@@ -2462,6 +2462,26 @@ def a2():
     else:
         return True
 
+def autolike():
+     for zx in range(0,100):
+        hasil = cl.activity(limit=100)
+        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
+          try:    
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
+            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Syams - 255\n\nSubscribe Channel Saya\n»» Youtube.com/c/SYAMSPlayMC")
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Vanny\n\nSubscribe Channel Saya\n»» Youtube.com/c/SYAMSPlayMC")
+            print "Like"
+          except:
+            pass
+        else:
+            print "Already Liked"
+     time.sleep(500)
+thread2 = threading.Thread(target=autolike)
+thread2.daemon = True
+thread2.start()
+
 def nameUpdate():
     while True:
         try:
