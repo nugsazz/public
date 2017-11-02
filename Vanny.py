@@ -1956,7 +1956,7 @@ def bot(op):
 					bctxt = msg.text.replace("Van say ","")
 					ki.sendText(msg.to,(bctxt))
 
-            elif msg.text in ["Creator1"]:
+            elif msg.text in ["Creator"]:
 					msg.contentType = 13
 					msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
 					cl.sendMessage(msg)
