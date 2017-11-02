@@ -90,10 +90,12 @@ helpMessage ="""»» !CommandMember! ««
 »» Vk ««
 »» Cleanse
 
-===========================================================
-|     BOT Creator : Vanny | http://line.me/ti/p/~syams011 |
-|    SUPPORT BY : Merkremont, Alfathdirk                  |
-===========================================================
+==========================================
+|     BOT Creator : Vanny, Mhiki         |
+|    SUPPORT BY : Merkremont, Alfathdirk |
+==========================================
+|     http://line.me/ti/p/~syams011      |
+==========================================
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -102,8 +104,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["ua4872a5a9a3b3be7cb07668b486c0e19","u8f85b39935a169005065036c9bfe4170"]
-creator=["ua4872a5a9a3b3be7cb07668b486c0e19"]
+admin=["ua4872a5a9a3b3be7cb07668b486c0e19","u8f85b39935a169005065036c9bfe4170","u1442f9961ed11112918825571bb1c8e0"]
+creator=["ua4872a5a9a3b3be7cb07668b486c0e19","u1442f9961ed11112918825571bb1c8e0"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -1956,7 +1958,7 @@ def bot(op):
 
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "ua4872a5a9a3b3be7cb07668b486c0e19"}
+					msg.contentMetadata = {'mid': "ua4872a5a9a3b3be7cb07668b486c0e19","u1442f9961ed11112918825571bb1c8e0"}
 					cl.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam: " in msg.text:
@@ -2322,7 +2324,7 @@ def bot(op):
             elif msg.text in ["hmm"]:
 				if msg.from_ in admin:
 					ki.sendText(msg.to,"Batuk Kong??")
-            elif msg.text in ["wkwkwk"]:
+            elif msg.text in ["wkwk"]:
 				if msg.from_ in admin:
 					ki.sendText(msg.to,"malik mana ya , gw jadi kangen naena sama dia")
             elif msg.text in ["Cv say chomel pekok"]:
@@ -2342,7 +2344,7 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Responsename","respon"]:
 				if msg.from_ in admin:
-					ki.sendText(msg.to,"Tob")
+					ki.sendText(msg.to,"Vanny")
 #-----------------------------------------------
             elif "Mid @" in msg.text:
             	if msg.from_ in admin:
@@ -2360,7 +2362,7 @@ def bot(op):
 					start = time.time()
 					cl.sendText(msg.to, "Wait...")
 					elapsed_time = time.time() - start
-					cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+					cl.sendText(msg.to, "%sseconds" % (elapsed_time)
 
 #------------------------------------------------------------------
             elif msg.text in ["Ban"]:
