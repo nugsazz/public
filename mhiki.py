@@ -107,7 +107,7 @@ wait = {
     'autoAdd':True,
     'message':"Owner : line://ti/p/~syams011",
     "lang":"JP",
-    "comment":"Owner : line://ti/p/~syams011"",
+    "comment":"Owner : line://ti/p/~syams011",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
