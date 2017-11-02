@@ -31,8 +31,7 @@ sys.setdefaultencoding('utf-8')
 
 helpMessage ="""»» !CommandMember! ««
 
-»» [Creator1] «« = Pembuat Bot Ke 1
-»» [Creator2] «« = Pembuat Bot Ke 2
+»» [Creator] «« = Pembuat Bot
 »» [Van say] «« = Contoh Van Say Hai
 »» [Gcreator] «« = Menunjukan Pembuat Group
 »» [.music] «« = Masih Belum Tau Kegunaanya
@@ -1962,10 +1961,10 @@ def bot(op):
 					msg.contentMetadata = {'mid': "ua4872a5a9a3b3be7cb07668b486c0e19"}
 					cl.sendMessage(msg)
 					
-		   elif msg.text in ["Creator2"]
-		            msg.contentType = 13
-		            msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
-		             cl.sendMessage(msg)
+	elif msg.text in ["Creator2"]:
+		                      msg.contentType = 13
+		                      msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
+		                      cl.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam: " in msg.text:
               if msg.from_ in admin:
