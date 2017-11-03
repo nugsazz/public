@@ -397,14 +397,7 @@ def bot(op):
                             ki.updateGroup(G)
                             nl.leaveGroup(op.param1)
                             nl1.leaveGroup(op.param1)
-
-        if op.type == 19:
-            if op.param3 in admin:
-                 random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                 random.choice(KAC).inviteIntoGroup(op.param1,admin)
-            else:
-                pass
-
+				
         if op.type == 19:
             if op.param2 not in admin:
                  random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
