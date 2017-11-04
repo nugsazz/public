@@ -2298,7 +2298,7 @@ def bot(op):
  #-----------------Fungsi Time Start-------------------
             elif "Time " in msg.text:
 				cl.sendText(msg.to, "Tanggal Sekarang = " + datetime.datetime.today().strftime("%d-%m-%y"))
-                ki.sendText(msg.to, "Waktu Sekarang = " + datetime.datetime.today().strftime("H:%M:%S"))
+                                ki.sendText(msg.to, "Waktu Sekarang = " + datetime.datetime.today().strftime("H:%M:%S"))
 #-----------------Fungsi Time Finish-----------------                                           
             elif msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
             	text = msg.text
