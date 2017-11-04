@@ -56,7 +56,7 @@ helpMessage ="""»» !CommandMember! ««
 ☞ Urloff
 ☞ Urlon
 ☞ Ginfo
-☞Cancel
+☞ Cancel
 ☞ Gn
 ☞ Cname
 ☞ Cstatus
@@ -77,7 +77,7 @@ helpMessage ="""»» !CommandMember! ««
 ☞ !Command Mimic! ☜
 ====================
 
-☞Mimic @
+☞ Mimic @
 ☞ Mimic:add: @
 ☞ Mimic:del: @
 ☞ ListTarget
@@ -2040,6 +2040,12 @@ def bot(op):
                     except:
                        pass
 #-----------------------------------------------
+            elif "Berapakah Besar Cinta " in msg.text:
+                tanya = msg.text.replace("Berapakah Besar Cinta ","")
+                jawab = ("0%","25%","50%","75%","80%","90%","100%")
+                jawaban = random.choice(jawab)
+                cl.sendText(msg.to,jawaban)
+#-----------------------------------------------
             elif "Stalk " in msg.text:
                  print "[Command]Stalk executing"
                  stalkID = msg.text.replace("Stalk ","")
@@ -2057,14 +2063,14 @@ def bot(op):
                      subprocess.call(["sudo","rm","-rf","tmp/tmp.jpg"])
                      print "[Command]Stalk executed - succes"           
 #-------------------------------------------------------------
-            elif "Gbc " in msg.text:
+            elif ".Gbc " in msg.text:
                if msg.from_ in admin:
                  bctxt = msg.text.replace("Gbc ", "")
                  n = cl.getGroupIdsJoined()
                  for manusia in n:
                    cl.sendText(manusia, (bctxt))
 
-            elif "Cbc " in msg.text:
+            elif ".Cbc " in msg.text:
                if msg.from_ in admin:
                  bctxt = msg.text.replace("Cbc ", "")
                  t = cl.getAllContactIds()
