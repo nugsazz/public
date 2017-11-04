@@ -2062,14 +2062,14 @@ def bot(op):
                  bctxt = msg.text.replace("Gbc ", "")
                  n = cl.getGroupIdsJoined()
                  for manusia in n:
-                 cl.sendText(manusia, (bctxt))
+                   cl.sendText(manusia, (bctxt))
 
             elif "Cbc " in msg.text:
                if msg.from_ in admin:
                  bctxt = msg.text.replace("Cbc ", "")
                  t = cl.getAllContactIds()
                  for manusia in t:
-                 cl.sendText(manusia, (bctxt))
+                   cl.sendText(manusia, (bctxt))
 #-------------------------------------------------------------
             elif msg.text in ["Backup","backup"]:
                 if msg.from_ in admin:
