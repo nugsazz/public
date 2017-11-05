@@ -2504,7 +2504,7 @@ def bot(op):
                       wait2['ROM'][msg.to] = {}
                       print wait2
 
-           elif msg.text in ["Cyduk"]:
+            elif msg.text in ["Cyduk"]:
                 if msg.to in wait2['readPoint']:
                    if wait2["ROM"][msg.to].items() == []:
                       chiya = ""
