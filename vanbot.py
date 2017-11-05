@@ -2004,26 +2004,6 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Kelebihan batas :v")
 #----------------------------------------------------
-            elif "Stac @" in msg.text:
-                 if msg.from_ in admin:
-                 _name = msg.text.replace("Stac @","")
-                 _nametarget = _name.rstrip(' ')
-                 gs = cl.getGroup(msg.to)
-                 for g in gs.members:
-                    if _nametarget == g.displayName:
-                       cl.sendText(g.mid,"Sorry !")
-                       kk.sendText(g.mid,"You Has Spamed !")  
-                       ki.sendText(g.mid,"Jangan Marah")  
-                       kc.sendText(g.mid,"Sorry!")
-                       kk.sendText(g.mid,"KONTOL !")  
-                       ki.sendText(g.mid,"KONTOL !")  
-                       kc.sendText(g.mid,"Spam !")
-                       kk.sendText(g.mid,"Spam !")  
-                       ki.sendText(g.mid,"Spam !")  
-                       kc.sendText(g.mid,"Spam !")
-                       cl.sendText(msg.to, "Done! ")
-                       print " Spammed !"
-#----------------------------------------------------
             elif "Cstatus:" in msg.text:
               if msg.from_ in admin:
                 string = msg.text.replace("Cstatus:","")
