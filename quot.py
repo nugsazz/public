@@ -303,13 +303,13 @@ def bot(op):
                 return
             ginfo = cl.getGroup(op.param1)
             ki.sendText(op.param1, "Selamat Datang Di Grup " + "[" + str(ginfo.name)) + "]"
-            ki.sendText(op.param1, "Owner Group Adalah " + str(ginfo.name) + " :\n" + ginfo.creator.displayName)
-            print "MemberJoin'
+            ki.sendText(op.param1, "Boleh Invite Orang Lain Kok Owner Group Adalah " + str(ginfo.name) + " :\n" + ginfo.creator.displayName)
+            print "Ada Orang Baru Join"
         if op.type == 15:
             if op.param2 in Bots:
                 return
             ki.sendText(op.param1, "Good Bye Kaka Jangan Kembali Lagi")
-            print "MemberLeave"
+            print "Selamat Tinggal Kaka Semoga Ngk Kembali Lagi"
 
         if op.type == 13:
                 if op.param3 in mid:
