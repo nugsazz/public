@@ -37,7 +37,7 @@ helpMessage ="""»» !CommandMember! ««
 ☞.Youtube
 ☞ Apakah 
 ☞ Berapa Besar Cinta
-☞ Aku Jomblo Selamanya? 
+☞ Aku Jomblo Selamanya ?
 
 ======================
 ☞ !Command Creator! ☜
@@ -113,8 +113,6 @@ helpMessage ="""»» !CommandMember! ««
 ╔════════════════╗
      ~*Syams aka Vanny*~
 ╚════════════════╝
-
-Ingin Menjadi Admin ? Chat Creator BOT http://line.me/ti/p/~syams011
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -2297,8 +2295,8 @@ def bot(op):
                       pass
 #-----------------------------------------------
             elif "Aku Jomblo Selamanya ? " in msg.text:
-                tanya = msg.text.replace("Aku Jomblo Selamnya ","")
-                jawab = ("Ya","Tidak","Bisa Jadi")
+                tanya = msg.text.replace("Aku Jomblo Selamanya ? ","")
+                jawab = ("Ya","Tidak","Bisa Jadi","Tingkat Akut")
                 jawaban = random.choice(jawab)
                 cl.sendText(msg.to,jawaban)
 #-----------------------------------------------
@@ -2490,8 +2488,8 @@ def bot(op):
 					cl.sendText(msg.to, "%sseconds" % (elapsed_time))
    
 #--------------------Cek Sider----------------------
-	    elif msg.text in ["vantv"]:
-                      cl.sendText(msg.to, "Hadir")
+	    elif msg.text in ["Tahlil"]:
+                      cl.sendText(msg.to, "Siapkan Buku Yasi'n Bagi Yang Tidak Hafal\nMohon Diam Sebentar Sampai Pambacaan Yasin Selesai")
                       try:
                        del wait2['readPoint'][msg.to]
                        del wait2['readMember'][msg.to]
