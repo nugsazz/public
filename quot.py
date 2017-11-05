@@ -45,8 +45,8 @@ helpMessage ="""»» !CommandMember! ««
 ☞ !Command Creator! ☜
 ======================
 
-☞ Admin add @
-☞ Admin remove @
+☞ Admadd @
+☞ Admrm @
 ☞ Adminlist
 ☞ InviteMeTo: 
 	
@@ -1992,7 +1992,7 @@ def bot(op):
                 teks = msg.text.replace("Spam: ")+str(txt[1])+" "+str(jmlh + " ","")
                 tulisan = jmlh * (teks+"\n")
                  #@reno.a.w
-               elif txt[1] == "on":
+                if txt[1] == "on":
                     if jmlh <= 300:
                        for x in range(jmlh):
                            cl.sendText(msg.to, teks)
@@ -2145,7 +2145,7 @@ def bot(op):
 				  ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt))
 				  kc.sendText(msg.to,(bctxt))
-			      ki.sendText(msg.to,(bctxt))
+			          ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt)) 
 				  kc.sendText(msg.to,(bctxt))
 				  ki.sendText(msg.to,(bctxt))
@@ -2187,7 +2187,7 @@ def bot(op):
                     cl.sendText(msg.to, "Group Creator : " + gCreator1)
                     cl.sendMessage(msg)
 #-----------------------------------------------
-            elif "Admin add @" in msg.text:
+            elif "Admadd @" in msg.text:
                 if msg.from_ in creator:
                     print "[Command]Staff add executing"
                     _name = msg.text.replace("Admin add @","")
@@ -2214,7 +2214,7 @@ def bot(op):
                     cl.sendText(msg.to,"Command Di Tolak Jangan Sedih")
                     cl.sendText(msg.to,"Sudah Menjadi Admin Maka Tidak Bisa Menjadi Admin Lagi")
 
-            elif "Admin remove @" in msg.text:
+            elif "Admrm @" in msg.text:
                 if msg.from_ in creator:
                     print "[Command]Staff remove executing"
                     _name = msg.text.replace("Admin remove @","")
