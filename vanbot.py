@@ -2490,7 +2490,7 @@ def bot(op):
 					cl.sendText(msg.to, "%sseconds" % (elapsed_time))
    
 #--------------------Cek Sider----------------------
-	      elif msg.text == "vantv":
+	    elif msg.text in ["vantv"]:
                       cl.sendText(msg.to, "Hadir")
                       try:
                        del wait2['readPoint'][msg.to]
@@ -2504,7 +2504,7 @@ def bot(op):
                       wait2['ROM'][msg.to] = {}
                       print wait2
 
-            elif msg.text == "Ciduk":
+           elif msg.text in ["Cyduk"]:
                 if msg.to in wait2['readPoint']:
                    if wait2["ROM"][msg.to].items() == []:
                       chiya = ""
