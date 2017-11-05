@@ -2600,27 +2600,6 @@ def bot(op):
     except Exception as error:
         print error
 
-       if op.type == 55:
-            try:
-                if op.param1 in wait2['readPoint']:
-                    Name = cl.getContact(op.param2).displayName
-                    if Name in wait2['readMember'][op.param1]:
-                        pass
-                    else:
-                        wait2['readMember'][op.param1] += "\n・" + Name
-                        wait2['ROM'][op.param1][op.param2] = "・" + Name
-                else:
-                    cl.sendText
-            except:
-                pass
-
-
-        if op.type == 59:
-            print op
-
-
-    except Exception as error:
-        print error
         
 def a2():
     now2 = datetime.now()
