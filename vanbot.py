@@ -2503,20 +2503,6 @@ def bot(op):
                       wait2['setTime'][msg.to] = datetime.strftime(now2,"%H:%M")
                       wait2['ROM'][msg.to] = {}
                       print wait2
-
-            elif msg.text in ["Cyduk"]:
-                if msg.to in wait2['readPoint']:
-                   if wait2["ROM"][msg.to].items() == []:
-                      chiya = ""
-                   else:
-                      chiya = ""
-                      for rom in wait2["ROM"][msg.to].items():
-                         print rom
-                         chiya += rom[1] + "\n"
-
-		                 cl.sendText(msg.to, "||===== Di Read Oleh =====||%s\n||=======☞ Vanny ☜=======||\n\n||Pelaku CCTV /👇👇👇||\n%sOrang Ini Agak Gila\n\nKerjaan Nya Cuman Siders\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
-       	        else:
-		                 cl.sendText(msg.to, "vantv Blom Di Ketik Koplak\n\nDASAR PIKUN ♪")
 #------------------------------------------------------------------
             elif msg.text in ["Ban"]:
 				if msg.from_ in admin:
