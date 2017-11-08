@@ -35,8 +35,7 @@ helpMessage ="""»» ♡!CommandMember!♡ ««
 ☞ Berapa Besar Cinta
 ☞ Aku Jomblo Selamanya? 
 ☞ Quotes1
-☞ Quotes2
-☞ .van | .time
+☞ .van
 
 
 ======================
@@ -2332,12 +2331,6 @@ def bot(op):
             elif "Quotes1" in msg.text:
                 tanya = msg.text.replace("Quotes1","")
                 jawab = ("Manusia hendaknya mulai dari detik ini juga mengusahakan dengan tidak pernah jemu untuk memahami hakekat Kebajikan/kebenaran, Kekayaan, Kesenangan, dan Kebebasan. Manusia adalah Sang Raja bagi dirinya sendiri, ia adalah pemimpin dari tubuhnya, ia adalah penguasa dari pikirannya; maka dari itu, berusahalah untuk memahami hakekat penjelmaan ini","Janganlah pernah bersedih hati dilahirkan menjadi manusia, meskipun pada kelahiran yang dianggap paling hina; karena sesungguhnya amat sulit untuk bisa menjelma menjadi manusia. Berbahagialah menjadi manusia","Mereka yang telah melakukan kebajikan pun kebenaran, namun masih terikat dalam proses lahir dan mati, mereka ini belumlah memperoleh inti sari dari kebebasan","Kebajikan dan kebenaran itu laksana perahu yang dapat mengantarkan manusia untuk pergi ke surga","Mustahil ada persahabatan tanpa kesabaran hati, yang ada pastilah kemurkaan, marah dan dendam, maka dari itu pupuklah terus kesabaran di dalam hati masing-masing")
-                jawaban = random.choice(jawab)
-                cl.sendText(msg.to,jawaban)
-#-----------------------------------------------
-           elif "Quotes2" in msg.text:
-                tanya = msg.text.replace("Quotes2","")
-                jawab = ("Ketahuilah bahwa orang yang dikuasai oleh kemarahan dan angkara murka apapun yang dipersembahkannya, apapun yang disumbang dan disedekahkannya, apapun jenis puasa dan pantangan yang dilakukannya, apapun yang dikurbankannya, semua itu menjadi tanpa pahala, mereka hanya mendapatkan rasa lelah dan kepayahan, oleh karenanya kuasailah kemarahan dan nafsu angkara itu","Seseorang yang selalu menganggap orang lain sebagai musuh dan selalu menganggap makhluk-makhluk lain sebagai ancaman bagi hidupnya; orang yang seperti ini tidak akan pernah memperoleh kesenangan apalagi kepuasan. Hidup mereka selalu was-was, selalu resah dan selalu merasa terancam walaupun telah berdiam di kamar baja dan dijaga ribuan prajurit","Seorang manusia sejati dan berbudi luhur keadaannya bagaikan seekor ular yang membuang kulitnya, demikian pulalah orang yang sabar senantiasa meninggalkan kemarahan dari dalam hatinya","Orang yang sulit tidur (insomnia) adalah mereka yang sedang sakit, mereka yang ketakutan, mereka yang dibenci, mereka yang sedang memikirkan pekerjaannya, dan mereka yang sedang dimabuk asmara serta mereka yang sedang nafsu birahi")
                 jawaban = random.choice(jawab)
                 cl.sendText(msg.to,jawaban)
 #-----------------------------------------------
