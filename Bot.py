@@ -2350,22 +2350,6 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Gambar Covernya")
                         cl.sendImageWithURL(msg.to,cover)
-#-----------------------------------------------------------
-             elif ".time" in msg.text:
-                   timeNow = datetime.now()
-                   timeHours = datetime.strftime(timeNow,"(%H:%M)")
-                   day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                   hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                   bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                   inihari = datetime.today()
-                   hr = inihari.strftime('%A')
-                   bln = inihari.strftime('%m')
-                   for i in range(len(day)):
-                       if hr == day[i]: hasil = hari[i]
-                   for k in range(0, len(bulan)):
-                       if bln == str(k): blan = bulan[k-1]
-                   rst = hasil + ", " + inihari.strftime('%d') + " - " + blan + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
-                   client.sendText(msg.to, rst)
 #-----------------------------------------------------------                                       
             elif msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
             	text = msg.text
