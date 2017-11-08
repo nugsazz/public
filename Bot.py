@@ -2148,7 +2148,7 @@ def bot(op):
 				  ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt))
 				  kc.sendText(msg.to,(bctxt))
-			      ki.sendText(msg.to,(bctxt))
+			          ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt)) 
 				  kc.sendText(msg.to,(bctxt))
 				  ki.sendText(msg.to,(bctxt))
