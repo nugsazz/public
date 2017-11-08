@@ -2351,7 +2351,7 @@ def bot(op):
                         cl.sendText(msg.to,"Gambar Covernya")
                         cl.sendImageWithURL(msg.to,cover)
 #-----------------------------------------------------------
-           elif ".time",".waktu" in msg.text:
+            elif ".time",".waktu" in msg.text:
                    timeNow = datetime.now()
                    timeHours = datetime.strftime(timeNow,"(%H:%M)")
                    day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
