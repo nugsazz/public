@@ -115,7 +115,7 @@ helpMessage ="""»» ♡!CommandMember!♡ ««
      ~*Syams aka Vanny*~
 ╚════════════════╝
 """
-KAC=[cl,ki,kk,kc]
+KAC=[cl,ki,kk]
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 kkmid = kk.getProfile().mid
