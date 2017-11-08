@@ -2305,7 +2305,7 @@ def bot(op):
                 jawaban = random.choice(jawab)
                 cl.sendText(msg.to,jawaban)
 #-----------------------------------------------
-           elif ".van" in msg.text:
+            elif ".van" in msg.text:
 	    	       wait2['setTime'][msg.to] = datetime.today().strftime('TANGGAL : %Y-%m-%d \nHARI : %A \nJAM : %H:%M:%S')
 	               cl.sendText(msg.to, "         KALENDER\n\n" + (wait2['setTime'][msg.to]))
 #-----------------------------------------------
