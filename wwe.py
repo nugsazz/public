@@ -22,11 +22,7 @@ helpMessage ="""»» ♡!CommandMember!♡ ««
 ☞ Van say [Kata Kata]
 ☞ Gcreator
 ☞ Apakah 
-☞ Berapa Besar Cinta
-☞ Aku Jomblo Selamanya? 
 ☞ Quotes1
-☞ Quotes2
-☞ .van
 ☞ /youtube ( /youtube Black) 
 ☞ /ig ( cek ig : /ig Instagram )
 ☞ /lirik ( /lirik Akad Payung Teduh ) 
@@ -2380,7 +2376,7 @@ def bot(op):
                 jawaban = random.choice(jawab)
                 cl.sendText(msg.to,jawaban)
 #-----------------------------------------------
-           elif ".van" in msg.text:
+            elif ".van" in msg.text:
 	    	       wait2['setTime'][msg.to] = datetime.today().strftime('TANGGAL : %Y-%m-%d \nHARI : %A \nJAM : %H:%M:%S')
 	               cl.sendText(msg.to, "         Waktu/Tanggal\n\n" + (wait2['setTime'][msg.to]))
 #-----------------------------------------------
