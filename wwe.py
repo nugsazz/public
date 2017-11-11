@@ -1987,7 +1987,7 @@ def bot(op):
                 teks = msg.text.replace("Spam: ")+str(txt[1])+" "+str(jmlh + " ","")
                 tulisan = jmlh * (teks+"\n")
                  #@reno.a.w
-               if txt[1] == "on":
+                if txt[1] == "on":
                     if jmlh <= 300:
                        for x in range(jmlh):
                            cl.sendText(msg.to, teks)
