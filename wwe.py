@@ -106,7 +106,7 @@ helpMessage ="""»» ♡!CommandMember!♡ ««
      ~*Syams aka Vanny*~
 ╚════════════════╝
 """
-KAC=[cl,kk,kc]
+KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -2219,7 +2219,7 @@ def bot(op):
 				  ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt))
 				  kc.sendText(msg.to,(bctxt))
-			          cl.sendText(msg.to,(bctxt))
+			          ki.sendText(msg.to,(bctxt))
 				  kk.sendText(msg.to,(bctxt)) 
 				  kc.sendText(msg.to,(bctxt))
 				  ki.sendText(msg.to,(bctxt))
