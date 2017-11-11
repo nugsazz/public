@@ -25,11 +25,6 @@ helpMessage ="""»» ♡!CommandMember!♡ ««
 ☞ Gcreator
 ☞ Apakah 
 ☞ Quotes1
-☞ /youtube ( /youtube Black) 
-☞ /ig ( cek ig : /ig Instagram )
-☞ /lirik ( /lirik Akad Payung Teduh ) 
-☞ /lagu ( /lagu Akad Payung Teduh )
-☞ /traslate-id | /traslate-en ( /traslate-en Banyak) 
 
 ======================
 ☞ !Command Creator! ☜
@@ -116,7 +111,7 @@ Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
 admin=["ua4872a5a9a3b3be7cb07668b486c0e19","u8f85b39935a169005065036c9bfe4170","u1442f9961ed11112918825571bb1c8e0"]
-creator=["ua4872a5a9a3b3be7cb07668b486c0e19"]
+creator=["ua4872a5a9a3b3be7cb07668b486c0e19","uc8e2c2b906e2322592c6d8f91a0957f7"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -1974,7 +1969,7 @@ def bot(op):
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u1442f9961ed11112918825571bb1c8e0"}
+					msg.contentMetadata = {'mid': "uc8e2c2b906e2322592c6d8f91a0957f7"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
