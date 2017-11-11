@@ -10,6 +10,8 @@ cl = LINETCR.LINE() #Bot Utama
 cl.login(token="Em8lPgJbwu55JI5jQHa0.J4wZMtwHAqbqzqnSM+5bCa.rbvZCObbwdg6JOj925KZrwJtA7WaTTqBpcYurt+kIlM=")
 cl.loginResult()
 
+ki = kk = kc = cl 
+
 print "Login Berhasil"
 reload(sys)
 sys.setdefaultencoding('utf-8')
