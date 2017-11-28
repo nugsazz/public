@@ -16,19 +16,19 @@ import urllib3
 
 
 cl = LINETCR.LINE() #Bot Utama
-cl.login(qr=True)
+cl.login(token="EngoffDSv6Domioqo6Md.AaRklDERafMmmw4gJp8JRq.273iqdHQ1E9BNLu6vST408CNW4nlD2vVRHVuPn7s1rg=")
 cl.loginResult()
 
 ki = kk = kc = cl 
 
-print "Login Berhasil"
+print "A̢҉҉̴̸̶͘͢͏̶̧́͢͠͞àn̛̛͜͝͡҉͏̴̶̧͜͟͞͠ ̴̵̷̢̢́͜͢͠J̢͟҉̨҉̨͏҉̷̸̷̢̨̨̛́͟͜ừ̶̸̕͘̕͘͜͡҉̕t̶̡̧̢̛̕̕͟͢a̧̕͜҉̨̡̛̀́́̕̕̕̕ẁ̸̴̡̢̛͘͘͟͡͠͝҉a̡͞͏͏̷̵̷̢̨̧̨̢̛́́͘͘͝͡͡n͜"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 #album = None
 #image_path = 'tmp/tmp.jpg'
 
-helpMessage ="""           V̗̱͚̩̗̀̃̓͊͋̈͜A̛̙͖̼̩̖̫̽̏̅̓͘N̝͉̤̝͊̌͑̂́͆͜͜N̜͕͖̫̝̳̋̉̏̓̅̀Y̼̳̘͇̥̹̆̒̾̔͛͝ ͈̙͍͔̰̟͊̒͂̋̀͘T̛̖̱͙̜̭̮̍͆̀̏͐Ẹ̡̹̥̦̖͒̋͗̒̒͠A͚̩̳̠͍͖̽͌̈́̎̚͝M̩̤̞͍̳̗̆̑̓͐̆͝ ̫̜̯̟͙͎́̇͆̆͝͠B̡̛̯̫̫͉̉̊̈͊̽͜Ṓ̙̼̹̖͚͍́͊͠͝T͍̯͔̻̜̹͐̽́̃̅͊
+helpMessage ="""           B̴̴̷̵̴̡͘͢͞͞͝͞o̢͘̕͢҉̵̴̸̧̡̨̕͘͞͞͡r̵̷̢̀̀́̕͜͟͞͡͡͝ù̴͜͟͏̨́͘͢͞͏t̡́̕͘͢͏̡o̴̷̶̢͢͜͞͝͞҉̵̢̢̡̛̛͢ ̨̨̡̛̀͟͠͠͝Bo̵̧͢҉̵̸̨͘͝t̶̷̸̵̵̴̢̢̧̧́̀́́͝
 
 ☞  .van say <text>
 ☞  .youtube <content> | Contoh = .youtube Minecraft
@@ -62,7 +62,7 @@ helpMessage ="""           V̗̱͚̩̗̀̃̓͊͋̈͜A̛̙͖̼̩̖̫̽̏̅̓͘N͊
 ☞  bye @
 
 sᴜᴘᴘᴏʀᴛ ʙʏ
-  V̗̱͚̩̗̀̃̓͊͋̈͜A̛̙͖̼̩̖̫̽̏̅̓͘N̝͉̤̝͊̌͑̂́͆͜͜N̜͕͖̫̝̳̋̉̏̓̅̀Y̼̳̘͇̥̹̆̒̾̔͛͝ ͈̙͍͔̰̟͊̒͂̋̀͘T̛̖̱͙̜̭̮̍͆̀̏͐Ẹ̡̹̥̦̖͒̋͗̒̒͠A͚̩̳̠͍͖̽͌̈́̎̚͝M̩̤̞͍̳̗̆̑̓͐̆͝ ̫̜̯̟͙͎́̇͆̆͝͠B̡̛̯̫̫͉̉̊̈͊̽͜Ṓ̙̼̹̖͚͍́͊͠͝T͍̯͔̻̜̹͐̽́̃̅͊
+  B̴̴̷̵̴̡͘͢͞͞͝͞o̢͘̕͢҉̵̴̸̧̡̨̕͘͞͞͡r̵̷̢̀̀́̕͜͟͞͡͡͝ù̴͜͟͏̨́͘͢͞͏t̡́̕͘͢͏̡o̴̷̶̢͢͜͞͝͞҉̵̢̢̡̛̛͢ ̨̨̡̛̀͟͠͠͝Bo̵̧͢҉̵̸̨͘͝t̶̷̸̵̵̴̢̢̧̧́̀́́͝
 """
 
 KAC=[cl,ki,kk,kc]
@@ -72,8 +72,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["ua4872a5a9a3b3be7cb07668b486c0e19","uc8e2c2b906e2322592c6d8f91a0957f7","u92d15d007bbbc0d2d35a6491cbe2d182"]
-creator=["ua4872a5a9a3b3be7cb07668b486c0e19","uc8e2c2b906e2322592c6d8f91a0957f7"]
+admin=["ub76a0153a283da9a1443dfb043181335"]
+creator=["ub76a0153a283da9a1443dfb043181335"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -81,9 +81,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Owner : line://ti/p/~syams011",
+    'message':"Owner : line://ti/p/~alrahmantoganteng",
     "lang":"JP",
-    "comment":"Owner : line://ti/p/~syams011",
+    "comment":"Owner : line://ti/p/~alrahmantoganteng",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
