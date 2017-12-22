@@ -21,14 +21,14 @@ cl.loginResult()
 
 ki = kk = kc = cl 
 
-print "A̢҉҉̴̸̶͘͢͏̶̧́͢͠͞àn̛̛͜͝͡҉͏̴̶̧͜͟͞͠ ̴̵̷̢̢́͜͢͠J̢͟҉̨҉̨͏҉̷̸̷̢̨̨̛́͟͜ừ̶̸̕͘̕͘͜͡҉̕t̶̡̧̢̛̕̕͟͢a̧̕͜҉̨̡̛̀́́̕̕̕̕ẁ̸̴̡̢̛͘͘͟͡͠͝҉a̡͞͏͏̷̵̷̢̨̧̨̢̛́́͘͘͝͡͡n͜"
+print "public"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 #album = None
 #image_path = 'tmp/tmp.jpg'
 
-helpMessage ="""           B̴̴̷̵̴̡͘͢͞͞͝͞o̢͘̕͢҉̵̴̸̧̡̨̕͘͞͞͡r̵̷̢̀̀́̕͜͟͞͡͡͝ù̴͜͟͏̨́͘͢͞͏t̡́̕͘͢͏̡o̴̷̶̢͢͜͞͝͞҉̵̢̢̡̛̛͢ ̨̨̡̛̀͟͠͠͝Bo̵̧͢҉̵̸̨͘͝t̶̷̸̵̵̴̢̢̧̧́̀́́͝
+helpMessage =""" publick bot
 
 ☞  .van say <text>
 ☞  .youtube <content> | Contoh = .youtube Minecraft
@@ -77,13 +77,13 @@ creator=["ub76a0153a283da9a1443dfb043181335"]
 wait = {
     'contact':False,
     'autoJoin':True,
-    'autoCancel':{"on":True,"members":1},
+    'autoCancel':{"on":False,"members":1},
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Owner : line://ti/p/~alrahmantoganteng",
+    'message':"Owner",
     "lang":"JP",
-    "comment":"Owner : line://ti/p/~alrahmantoganteng",
+    "comment":"Owner ",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -94,7 +94,7 @@ wait = {
     "dblacklist":False,
     "Protectguest":False,
     "Protectcancel":False,
-    "protectionOn":True,
+    "protectionOn":False,
     "atjointicket":True
     }
 
